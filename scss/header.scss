@@ -1,0 +1,180 @@
+//====================================================================================================
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/
+
+
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+
+.header {
+	background-color: $foot;
+
+	// .header__container
+	&__container {
+		
+	}
+}
+.nav {
+	padding: rem(60) rem(0) rem(0) rem(0);
+	display: flex;
+	justify-content: space-between;
+	
+	// .nav__li
+	&__li {
+		display: flex;
+		margin: rem(15) rem(0) rem(0) rem(0);
+	}
+}
+.logo {
+	padding-top: rem(15);
+}
+.nav-list {
+	display: flex;
+	padding-top: rem(15);
+	padding-left: rem(32);
+		li{
+			padding: rem(0) rem(32) rem(0) rem(0);
+				&:last-child{
+					padding-right: rem(0);
+				}
+		}
+}
+.reg {
+	font-weight: 500;
+	display: flex;
+	margin: rem(0) rem(0) rem(0) rem(55);
+	padding-left: 24px;
+		a{
+			padding-top: rem(15);
+		}
+	
+
+}
+.log {
+	
+	padding-right: 24px;
+}
+
+.button{
+	border-left: solid	1px #666363;
+	padding: rem(0) rem(0) rem(0) rem(24);
+	font-weight: 500;
+}
+
+.btn {
+	background-color: $button;
+	padding: rem(14) rem(32) ;
+	border-radius: 32px;
+		&:hover{
+			background-color: $fon;
+			box-shadow: 0px 0px 15px $mainColor;
+		}
+}
+
+
+
+//!=============================== END ===============================//
+//?===================================================================//
+//*============================== START ==============================//
+.try-for {
+	margin: rem(98) rem(0) rem(0) rem(0);
+	display: flex;
+}
+.info {
+	margin: rem(157) rem(0) rem(28) rem(0);
+}
+.save {
+	position: absolute;
+	z-index: 1;
+	background-color: $mainColor;
+	color: $block1;
+	font-weight: 500;
+	border-radius: rem(32);
+	padding: rem(6) rem(16);
+	margin: rem(-6) rem(0) rem(0) rem(0);
+}
+.black {
+	position: relative;
+	font-weight: 500;
+	background-color: $fon;
+	border-radius: rem(32);
+	padding: rem(6) rem(11) rem(6) rem(116);
+	
+
+
+}
+.text-block {
+
+		// .text-block__h1
+		&__h1 {
+			font-weight: 700;
+			font-size: 64px;
+			margin-bottom: rem(24);
+		}
+
+		// .text-block__p1
+		&__p1 {
+			color: $text1;
+			width: 435px;
+			margin: rem(0) rem(0) rem(32) rem(0);
+			line-height: rem(28);
+		}
+}
+.img {
+	
+}
+
+
+
