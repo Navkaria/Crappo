@@ -308,6 +308,50 @@ h6 {
   line-height: 1.75rem;
 }
 
+.footer__bg {
+  background-color: #0D0D2B;
+}
+
+.foot-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4.875rem 0rem 4.625rem 0rem;
+}
+
+.foot-title__info-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.00625rem;
+}
+
+.foot-title__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foot-title__icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foot-title__icon-inst {
+  padding: 0rem 2.125rem 0rem 2.125rem;
+}
+
+.foot-title__icon-twit {
+  padding: 0rem 2.125rem 0rem 2.125rem;
+}
+
 .fons {
   background-color: #0D0D2B;
 }
@@ -394,7 +438,6 @@ h6 {
 }
 
 .blok1 {
-  margin-top: 0.8125rem;
   -webkit-box-ordinal-group: none;
       -ms-flex-order: none;
           order: none;
@@ -410,6 +453,33 @@ h6 {
   font-size: 20px;
   color: #000;
   outline: none;
+  width: 25.1875rem;
+  padding-bottom: 0.0625rem;
+}
+
+.blok1__enter::-webkit-input-placeholder {
+  color: #000;
+  font-weight: 400;
+}
+
+.blok1__enter::-moz-placeholder {
+  color: #000;
+  font-weight: 400;
+}
+
+.blok1__enter:-ms-input-placeholder {
+  color: #000;
+  font-weight: 400;
+}
+
+.blok1__enter::-ms-input-placeholder {
+  color: #000;
+  font-weight: 400;
+}
+
+.blok1__enter::placeholder {
+  color: #000;
+  font-weight: 400;
 }
 
 .blok2 {
@@ -482,133 +552,148 @@ h6 {
   color: #828282;
 }
 
-.kalag__block {
-  color: #000;
-  margin-top: 6.25rem;
-}
-
-.kalag__text-trade {
-  font-weight: 700;
-  font-size: 40px;
-  width: 46.3125rem;
-  margin: 0 auto;
+.crypto__container {
   text-align: center;
 }
 
-.kalag__info-coin {
-  margin: 4rem 0rem 6.25rem 0rem;
+.crypto__title {
+  padding-top: 6.25rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 150%;
+  color: #000;
+}
+
+.crypto__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
+  padding-bottom: 6.25rem;
 }
 
-.transform {
-  padding: 3rem 1.5rem 3rem 1.5rem;
-}
-
-.coin {
+.crypto-item {
+  margin-bottom: 2.8125rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
-}
-
-.coin__name {
-  margin: 3rem 0rem 1rem 0rem;
-}
-
-.coin__info {
-  width: 20.125rem;
-  margin-bottom: 2.6875rem;
-  line-height: 1.5;
-}
-
-.coin__b {
   background-color: #FFFFFF;
-  padding: 3rem 1.5rem 3rem 1.5rem;
-  border-radius: 1.25rem;
-  -webkit-box-shadow: 0px 40px 40px rgba(57, 23, 119, 0.0549019608);
-          box-shadow: 0px 40px 40px rgba(57, 23, 119, 0.0549019608);
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
+  padding: 3rem 0;
+  -webkit-backdrop-filter: blur(15.625rem);
+          backdrop-filter: blur(15.625rem);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.025rem 1.25rem rgba(57, 23, 119, 0.1921568627);
+          box-shadow: 0 0.025rem 1.25rem rgba(57, 23, 119, 0.1921568627);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.coin__b:hover {
+.crypto-item:hover {
   background-color: #2B076E;
-  color: #FBFCFE;
+  -webkit-box-shadow: 0 0.025rem 2.5rem rgba(57, 23, 119, 0.3764705882);
+          box-shadow: 0 0.025rem 2.5rem rgba(57, 23, 119, 0.3764705882);
 }
 
-.coin__e {
-  background-color: #FFFFFF;
-  padding: 3rem 1.5rem 3rem 1.5rem;
-  border-radius: 1.25rem;
-  -webkit-box-shadow: 0px 40px 40px rgba(57, 23, 119, 0.0549019608);
-          box-shadow: 0px 40px 40px rgba(57, 23, 119, 0.0549019608);
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
+.crypto-item:hover .crypto-item__title,
+.crypto-item:hover .crypto-item__text {
+  color: #FFFFFF;
 }
 
-.coin__e:hover {
-  background-color: #2B076E;
-  color: #FBFCFE;
+.crypto-item:hover .crypto-item__link-text {
+  width: 8.3125rem;
 }
 
-.coin__l {
-  background-color: #FFFFFF;
-  padding: 3rem 1.5rem 3rem 1.5rem;
-  border-radius: 1.25rem;
-  -webkit-box-shadow: 0px 40px 40px rgba(57, 23, 119, 0.0549019608);
-          box-shadow: 0px 40px 40px rgba(57, 23, 119, 0.0549019608);
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
-}
-
-.coin__l:hover {
-  background-color: #2B076E;
-  color: #FBFCFE;
-}
-
-.crypto__btn {
+.crypto-item:hover .crypto-item__link {
   background-color: #3671E9;
-  color: #FBFCFE;
+}
+
+.crypto-item:hover .crypto-item__link-icon {
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+          transform: scale(0.6);
+  border: 0.0625rem solid #FFFFFF;
+}
+
+.crypto-item:hover .crypto-item__img {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.crypto-item__img {
+  margin-bottom: 3rem;
+}
+
+.crypto-item__title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: #000;
+}
+
+.crypto-item__type {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 150%;
+  color: #adadad;
+}
+
+.crypto-item__text {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  max-width: 20.125rem;
+  color: #828282;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.crypto-item__link {
+  margin-bottom: 3rem;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  padding: 0rem 0.9375rem;
+  border-radius: 2rem;
   font-size: 1.125rem;
   border-radius: 2rem;
-  padding: 1.125rem 1.25rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 14.6875rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 12.8125rem;
   margin: 0 auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.crypto__btn:hover {
-  border-color: #FBFCFE;
-}
-
-.crypto__btn-text {
+.crypto-item__link-text {
   font-size: 1.125rem;
   font-weight: 500;
-  margin-right: 1.5rem;
-  white-space: nowrap;
-  -webkit-transition: 0.2s ease background-color;
-  -o-transition: 0.2s ease background-color;
-  transition: 0.2s ease background-color;
+  width: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.crypto__btn-item {
-  background-color: #FBFCFE;
+.crypto-item__link-icon {
+  background-color: #FFFFFF;
   width: 4rem;
   height: 4rem;
   display: block;
@@ -616,5 +701,83 @@ h6 {
   background-image: url(../img/strell.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  border: 2px solid rgba(43, 7, 110, 0.2549019608);
+  border: 0.0625rem solid rgba(43, 7, 110, 0.2);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mining__bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2B076E), to(#0D0D2B));
+  background: -o-linear-gradient(top, #2B076E 0%, #0D0D2B 100%);
+  background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  padding: 5.5rem 7.5rem;
+}
+
+.mining__df {
+  background-color: #3671E9;
+  padding: 3rem 3rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mining__info-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mining__info-text {
+  width: 21.75rem;
+  line-height: 1.75rem;
+}
+
+.mining__poles-text-enter {
+  margin-top: 1.375rem;
+  color: #FBFCFE;
+  outline: none;
+  background-color: #3671E9;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  width: 23.375rem;
+}
+
+.mining__poles-text-enter::-webkit-input-placeholder {
+  color: #FBFCFE;
+  font-weight: 400;
+}
+
+.mining__poles-text-enter::-moz-placeholder {
+  color: #FBFCFE;
+  font-weight: 400;
+}
+
+.mining__poles-text-enter:-ms-input-placeholder {
+  color: #FBFCFE;
+  font-weight: 400;
+}
+
+.mining__poles-text-enter::-ms-input-placeholder {
+  color: #FBFCFE;
+  font-weight: 400;
+}
+
+.mining__poles-text-enter::placeholder {
+  color: #FBFCFE;
+  font-weight: 400;
+}
+
+.mining__poles-button-text {
+  margin-top: 0.75rem;
+  color: #000;
+  background-color: #FBFCFE;
+  padding: 0.875rem 2.125rem;
+  border-radius: 2rem;
 }
