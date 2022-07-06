@@ -115,17 +115,23 @@
 }
 
 .blok1 {
-    margin-top: rem(13);
     order: none;
     background-color: $block2;
     border-bottom: 1px solid $text1;
     height: 38px;
     flex: 1 1 300px;
+
 		// .blok1__enter
 		&__enter {
             font-size: 20px;
             color: $block1;
             outline:none;
+            width: rem(403);
+            padding-bottom: rem(1);
+            &::placeholder{
+                color: $block1;
+                font-weight: 400;
+            }
 		} 
 }
 .blok2 {
@@ -215,160 +221,206 @@ color: $o;
 //?===================================================================//
 //*============================== START ==============================//
 
-.kalag {
-
-    // .kalag__block
-
-    &__block {
-        color: $block1;
-        margin-top: rem(100);
+.crypto{
+    &__bg{
+        
     }
-
-    // .kalag__text-trade
-
-    &__text-trade {
-        font-weight: 700;
-        font-size: 40px;
-        width: rem(741);
-        margin: 0  auto;
+    &__container{
         text-align: center;
     }
-
-    // .kalag__info-coin
-
-    &__info-coin {
-        margin: rem(64) rem(0) rem(100) rem(0);
+    &__title{
+        padding-top: rem(100);
+        margin-bottom: rem(64);
+        font-weight: 700;
+        font-size: rem(40);
+        line-height: 150%;
+        color: $block1;
+    }
+    &__items{
         display: flex;
         justify-content: space-between;
-        text-align: center;
-        
-        
+        padding-bottom: rem(100);
     }
-}
-
-.transform{
-    padding: rem(48) rem(24) rem(48) rem(24);
-}
-
-.coin {
-    flex: 0 0 30%;
-
-    // .coin__img
-
-    &__img {
-    }
-
-    // .coin__name
-
-    &__name {
-        margin: rem(48) rem(0) rem(16) rem(0);
-    }
-
-    // .coin__info
-
-    &__info {
-        width: rem(322);
-        margin-bottom: rem(43);
-        line-height: 1.5;
-    }
-
-    // .coin__b
-    &__b {
+    &-item{
+        margin-bottom: rem(45);
+        flex: 0 0 30%;
         background-color: $mainColor;
-        padding: rem(48) rem(24) rem(48) rem(24);
-        border-radius: rem(20);
-        box-shadow: 0px 40px 40px $ten;
-        transition: .6s ease;
+        padding: rem(48) 0;
+        backdrop-filter: blur(rem(250));
+        border-radius: rem(16);
+        box-shadow: 0 rem(0.4) rem(20) #39177731;
+        transition: .3s ;
         &:hover{
             background-color: $hov;
-            color: $block2;
+            box-shadow: 0 rem(0.4) rem(40)  #39177760;
         }
-    }
-
-    // .coin__e
-    &__e {
-        background-color: $mainColor;
-        padding: rem(48) rem(24) rem(48) rem(24);
-        border-radius: rem(20);
-        box-shadow: 0px 40px 40px $ten;
-        transition: .6s ease;
-        &:hover{
-            background-color: $hov;
-            color: $block2;
-        }
-    }
-
-    // .coin__l
-    &__l {
-        background-color: $mainColor;
-        padding: rem(48) rem(24) rem(48) rem(24);
-        border-radius: rem(20);
-        box-shadow: 0px 40px 40px $ten;
-        transition: .6s ease;
-        &:hover{
-            background-color: $hov;
-            color: $block2;
-        }
-    }
-}
-
-//?===================================================================//
-
-.crypto {
+        &:hover .crypto-item__title, &:hover .crypto-item__text{
+            color: $mainColor;
     
-    // .crypto__btn
+        }
+        &:hover .crypto-item__link-text{
+            width: rem(133);
+        }
+        &:hover .crypto-item__link{
+            background-color: $button;
+        }
+        &:hover .crypto-item__link-icon{
+            transform: scale(0.6);
+            border: rem(1) solid $mainColor;
+        }
 
-    &__btn {
-        background-color: $button;
-        color: $block2;
-        font-size: rem(18);
-        border-radius: rem(32);
-        padding: rem(18) rem(20);
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        max-width: rem(235);
-        margin: 0 auto;
-            &:hover{
-                border-color: $block2;
+        &:hover .crypto-item__img{
+            transform: rotate(45deg);
+            transition: .3s;
+        }
+        
+
+        &__img{
+            margin-bottom: rem(48);
+        }
+        &__title{
+            margin-bottom: rem(16);
+            font-weight: 700;
+            font-size: rem(32);
+            line-height: 150%;
+            transition: .2s;
+            color: $block1;
+        }
+        &__type{
+            font-weight: 500;
+            font-size: rem(18);
+            line-height: 150%;
+            color: #adadad;
+            
+        }
+        &__text{
+            display: inline-block;
+            margin-bottom: rem(40);
+            max-width: rem(322);
+            color: $o;
+            transition: .1s;
+        }
+        &__link{
+            margin-bottom: rem(48);
+            background-color: $mainColor;
+            color: $mainColor;
+            padding: rem(0) rem(15);
+            border-radius: rem(32);
+            font-size: rem(18);
+            border-radius: rem(32);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: rem(205);
+            margin: 0 auto;
+            transition: .3s;
+            &-text{
+                font-size: rem(18);
+                font-weight: 500;
+                width: 0;
+                transition: .3s;
             }
-        
-    }
-
-    // .crypto__btn-text
-
-    &__btn-text {
-        font-size: rem(18);
-        font-weight: 500;
-        margin-right: rem(24);
-        white-space: nowrap;
-        transition: .2s ease background-color;
-    
-    }
-
-    // .crypto__btn-item
-
-    &__btn-item {
-        background-color: $block2;
-        width: rem(64);
-        height: rem(64);
-        display: block;
-        border-radius: 100%;
-        background-image: url(../img/strell.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        border: 2px solid #2b076e41;
-        
+            &-icon{
+                background-color: $mainColor;
+                width: rem(64);
+                height: rem(64);
+                display: block;
+                border-radius: 100%;
+                background-image: url(../img/strell.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                border: rem(1) solid rgba($hov, 0.2);
+                transform: scale(1);
+                transition: .3s;
+            }
+        }
     }
 }
 
-
 //!=============================== END ===============================//
 //?===================================================================//
 //*============================== START ==============================//
 
+.mining {
 
+    // .mining__bg
+    &__bg {
+        background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+        padding: rem(88) rem(120);
+    }
+
+    // .mining__container
+    &__container {
+        
+    }
+
+     // .mining__df
+    &__df {
+        background-color: $button;
+        padding: rem(48) rem(48);
+        border-radius: rem(16);
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    // .mining__info
+    &__info {
+
+    }
+
+    // .mining__info-title
+    &__info-title {
+        font-weight: 700;
+        font-size: rem(32);
+        margin-bottom: rem(16);
+    }
+
+    // .mining__info-text
+    &__info-text {
+        width: rem(348);
+        line-height: rem(28);
+    }
+
+    // .mining__poles
+    &__poles {
+        
+    }
+
+    // .mining__poles-text
+    &__poles-text {
+        
+        
+    }
+
+    // .mining__poles-text-enter
+    &__poles-text-enter {
+        margin-top: rem(22);
+        color: $block2;
+        outline: none;
+        background-color: $button;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+        width: rem(374);
+            &::placeholder{
+                color: $block2;
+                font-weight: 400;
+            }
+    }
+
+    // .mining__poles-button
+    &__poles-button {
+
+    }
+
+    // .mining__poles-button-text
+    &__poles-button-text {
+        margin-top: rem(12);
+        color: $block1;
+        background-color: $block2;
+        padding: rem(14) rem(34);
+        border-radius: rem(32);
+    }
+}
 
 //!=============================== END ===============================//
 //?===================================================================//
-//*============================== START ==============================//
