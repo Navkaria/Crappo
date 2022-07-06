@@ -1,3 +1,72 @@
 //====================================================================================================
+.footer {
+
+    // .footer__bg
+
+    &__bg {
+        background-color: $foot;
+    }
+
+    // .footer__container
+
+    &__container {
+    }
+}
+.foot-title {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(78) rem(0) rem(74) rem(0);
+    // .foot-title__info
+
+    &__info {
+    }
+
+    // .foot-title__info-text
+
+    &__info-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: rem(0.1);   
+    }
+
+    // .foot-title__icon
+
+    &__icon {
+        display: flex;
+            ul{
+                display: flex;
+                align-items: center;
+            }
+    }
+
+    // .foot-title__icon-fac
+
+    &__icon-fac {
+
+    }
+
+    // .foot-title__icon-inst
+
+    &__icon-inst {
+        padding: rem(0) rem(34) rem(0) rem(34);
+    }
+
+    // .foot-title__icon-yt
+
+    &__icon-yt {
+    }
+
+    // .foot-title__icon-twit
+
+    &__icon-twit {
+        padding: rem(0) rem(34) rem(0) rem(34);
+    }
+
+    // .foot-title__icon-fin
+
+    &__icon-fin {
+    }
+}
 
 //====================================================================================================
