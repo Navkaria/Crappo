@@ -66,6 +66,13 @@
 
 .leter {
 
+    img{
+        transition: .4s;
+        &:hover{
+            transform: rotate(45deg);
+            transition: .3s ;
+        }
+    }
     // .leter__check
     &__check {
         margin-top: rem(100);
@@ -75,6 +82,7 @@
     text-align: center
 }
 .let {
+    
 }
 .text {
 
@@ -160,6 +168,7 @@
         padding: rem(14) rem(32) ;
         border-radius: 32px;
         flex: 1 1 200px;
+        transition: .4s;
             &:hover{
                 background-color: $hov;
                 box-shadow: 0px 0px 15px #525252;
@@ -270,13 +279,13 @@ color: $o;
         }
 
         &:hover .crypto-item__img{
-            transform: rotate(45deg);
-            transition: .3s;
+            transform: rotate(-25deg);
         }
         
 
         &__img{
             margin-bottom: rem(48);
+            transition:  all .3s;
         }
         &__title{
             margin-bottom: rem(16);
@@ -313,7 +322,7 @@ color: $o;
             justify-content: center;
             max-width: rem(205);
             margin: 0 auto;
-            transition: .3s;
+            transition: .4s;
             &-text{
                 font-size: rem(18);
                 font-weight: 500;
@@ -331,7 +340,7 @@ color: $o;
                 background-position: center center;
                 border: rem(1) solid rgba($hov, 0.2);
                 transform: scale(1);
-                transition: .3s;
+                transition: .4s;
             }
         }
     }
@@ -409,7 +418,7 @@ color: $o;
 
     // .mining__poles-button
     &__poles-button {
-
+		
     }
 
     // .mining__poles-button-text
@@ -419,6 +428,13 @@ color: $o;
         background-color: $block2;
         padding: rem(14) rem(34);
         border-radius: rem(32);
+        transition: .4s;
+        &:hover{
+			background-color: $fon;
+			box-shadow: 0px 0px 15px $mainColor;
+            color: $block2;
+		
+        }
     }
 }
 
