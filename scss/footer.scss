@@ -33,6 +33,12 @@
     // .foot-title__icon
 
     &__icon {
+        img{
+            transition: .3s ease;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
         display: flex;
             ul{
                 display: flex;
@@ -49,7 +55,7 @@
     // .foot-title__icon-inst
 
     &__icon-inst {
-        padding: rem(0) rem(34) rem(0) rem(34);
+        margin: rem(0) rem(34) rem(0) rem(34);
     }
 
     // .foot-title__icon-yt
@@ -60,7 +66,7 @@
     // .foot-title__icon-twit
 
     &__icon-twit {
-        padding: rem(0) rem(34) rem(0) rem(34);
+        margin: rem(0) rem(34) rem(0) rem(34);
     }
 
     // .foot-title__icon-fin
